@@ -24,6 +24,8 @@ DL_NAME = YALMIP.zip
 
 all: $(UNZIP_DIR) $(BUILD_PREFIX)/matlab/addpath_yalmip.m $(BUILD_PREFIX)/matlab/rmpath_yalmip.m
 
+configure:
+
 $(UNZIP_DIR):
 	wget --no-check-certificate $(DL_PATH)/$(DL_NAME) && unzip $(DL_NAME) && rm $(DL_NAME)
 
