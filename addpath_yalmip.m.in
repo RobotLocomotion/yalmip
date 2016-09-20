@@ -1,11 +1,11 @@
 function addpath_yalmip()
   yalmip_dir='@CMAKE_CURRENT_SOURCE_DIR@';
-  addpath(yalmip_dir);
-  addpath(fullfile(yalmip_dir,'extras'));
-  addpath(fullfile(yalmip_dir,'solvers'));
-  addpath(fullfile(yalmip_dir,'modules'));
-  addpath(fullfile(yalmip_dir,'modules','parametric'));
-  addpath(fullfile(yalmip_dir,'modules','moment'));
-  addpath(fullfile(yalmip_dir,'modules','global'));
-  addpath(fullfile(yalmip_dir,'modules','sos'));
-  addpath(fullfile(yalmip_dir,'operators'));
+  addpath(fullfile(yalmip_dir,'yalmip'));
+  addpath(fullfile(yalmip_dir,'yalmip','extras'));
+  addpath(fullfile(yalmip_dir,'yalmip','solvers'));
+  addpath(fullfile(yalmip_dir,'yalmip','modules'));
+  addpath(fullfile(yalmip_dir,'yalmip','modules','parametric'));
+  addpath(fullfile(yalmip_dir,'yalmip','modules','moment'));
+  addpath(fullfile(yalmip_dir,'yalmip','modules','global'));
+  addpath(fullfile(yalmip_dir,'yalmip','modules','sos'));
+  addpath(fullfile(yalmip_dir,'yalmip','operators'));
