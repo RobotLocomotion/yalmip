@@ -18,7 +18,13 @@ endif()
 configure_file(addpath_yalmip.m.in addpath_yalmip.m @ONLY)
 configure_file(rmpath_yalmip.m.in rmpath_yalmip.m @ONLY)
 
+include(GNUInstallDirs)
+
 install(FILES
   "${CMAKE_CURRENT_BINARY_DIR}/addpath_yalmip.m"
   "${CMAKE_CURRENT_BINARY_DIR}/rmpath_yalmip.m"
   DESTINATION matlab)
+
+install(FILES yalmip/license.txt
+  DESTINATION ${CMAKE_INSTALL_DOCDIR}
+  RENAME LICENSE)
